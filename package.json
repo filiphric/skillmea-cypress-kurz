@@ -1,0 +1,23 @@
+{
+  "name": "skillmea-cypress-kurz",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install -s",
+    "start": "cd trelloapp && npm start"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Filip Hric (https://filiphric.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "cypress-plugin-api": "^2.10.0",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}

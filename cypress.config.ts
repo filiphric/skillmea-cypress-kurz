@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 // import { resetDb } from './cypress/tasks/resetDb'
 
 module.exports = defineConfig({
+  projectId: 'nvrnry',
   viewportHeight: 550,
   viewportWidth: 660,
   e2e: {

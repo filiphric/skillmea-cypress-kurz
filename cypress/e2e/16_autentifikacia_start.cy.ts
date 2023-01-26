@@ -1,0 +1,5 @@
+it('prihlasenie', () => {
+
+  cy.visit('/')
+
+});

@@ -17,9 +17,12 @@ module.exports = defineConfig({
       // config.baseUrl = process.env.CI ? 'https://skillmea.sk' : 'http://localhost:3000'
       // return config
     },
-    specPattern: '**/headless/*.cy.{js,ts}',
+    // specPattern: '**/headless/*.cy.{js,ts}',
+    excludeSpecPattern: '**/headless/*.cy.{js,ts}',
     baseUrl: 'http://localhost:3000',
-    scrollBehavior: false,
-
+    experimentalWebKitSupport: true,
+    // env: {
+    //   requestMode: true
+    // }
   }
 });
